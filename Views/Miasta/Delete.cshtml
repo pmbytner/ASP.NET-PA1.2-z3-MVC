@@ -1,0 +1,51 @@
+﻿@model ASP.NET_PA1._2_z3_MVC.Models.Miasto
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Miasto</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nazwa)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nazwa)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Populacja)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Populacja)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Powierzchnia)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Powierzchnia)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DataZałożenia)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DataZałożenia)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Województwo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Województwo)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

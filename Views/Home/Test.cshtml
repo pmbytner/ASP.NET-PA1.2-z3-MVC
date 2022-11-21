@@ -1,0 +1,10 @@
+﻿@model ASP.NET_PA1._2_z3_MVC.ViewModels.HomeTestViewmodel;
+
+@{
+    ViewData["Title"] = "Test";
+}
+<h1>Test</h1>
+
+@for (int i = 0; i < Model.Id; i++) {
+    <p>Otrzymałem imię: @Model.Imię</p>
+}

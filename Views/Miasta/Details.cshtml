@@ -1,0 +1,48 @@
+﻿@model ASP.NET_PA1._2_z3_MVC.Models.Miasto
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Miasto</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nazwa)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nazwa)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Populacja)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Populacja)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Powierzchnia)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Powierzchnia)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DataZałożenia)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DataZałożenia)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Województwo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Województwo)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
